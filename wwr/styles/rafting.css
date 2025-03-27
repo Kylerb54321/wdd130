@@ -22,7 +22,7 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: auto 1fr; 
+    grid-template-columns: auto 1fr auto;
     align-items: center;
     padding: 20px;
     background-color: var(--primary-color);
@@ -30,14 +30,26 @@ header {
 }
 
 header img {
-    max-width: 200px; 
+    max-width: 150px; 
     height: auto;
 }
 
-nav {
+header h1 {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+nav ul {
     display: flex;
-    justify-content: flex-end; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
     gap: 20px;
+}
+
+nav ul li {
+    display: inline;
 }
 
 nav a {
@@ -53,27 +65,20 @@ nav a:hover {
     border-bottom: 2px solid var(--accent-color);
 }
 
-h1, h2, h3, h4, h5 {
-    color: var(--primary-color);
-    font-weight: 700;
-}
-
-p {
-    color: var(--text-color);
-    line-height: 1.6;
-}
-
 .history {
     padding: 40px 20px;
     background-color: #444;
     color: var(--text-color);
+    text-align: center;
 }
+
 .adventures {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     padding: 40px 20px;
     background-color: var(--secondary-color);
+    text-align: center;
 }
 
 .adventures figure {
@@ -88,6 +93,7 @@ p {
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .adventures figcaption {
@@ -95,6 +101,7 @@ p {
     text-align: center;
     background-color: var(--primary-color);
     color: var(--text-color);
+    font-weight: bold;
 }
 
 footer {
@@ -112,19 +119,17 @@ footer p {
 
 .social-links {
     display: flex; 
-    gap: 20px; 
-}
-
-.social-links a {
-    text-decoration: none;
+    gap: 15px; 
+    align-items: center;
 }
 
 .social-links img {
-    width: 1px; 
-    height: 1px;
+    width: 30px; 
+    height: 30px;
     display: inline-block;
     vertical-align: middle;
 }
+
 
 
 
