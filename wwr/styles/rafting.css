@@ -329,6 +329,179 @@ input[type="submit"]:hover {
     color: var(--primary-color);
 }
 
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-color);
+    font-size: 2.5rem;
+    background-color: rgba(27, 32, 33, 0.7);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 2;
+}
+
+.cta {
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 40px 20px;
+    color: var(--text-color);
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+}
+
+.grid-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 40px 20px;
+    background-color: #444;
+    color: var(--text-color);
+}
+
+.grid-item {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.grid-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.newsletter {
+    background-color: var(--secondary-color);
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+}
+
+.trip-gallery {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+  
+.trip-gallery article {
+    flex: 1;
+    background: #f0f0f0;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+  
+.trip-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+  
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+  
+.trip-table th, .trip-table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: center;
+}
+  
+.trip-table th {
+    background-color: #f7f7f7;
+}  
+
 footer p a {
     color: var(--accent-color);
     font-size: 16px;
