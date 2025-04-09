@@ -539,6 +539,3 @@ footer p {
     display: inline-block;
     vertical-align: middle;
 }
-
-
-
